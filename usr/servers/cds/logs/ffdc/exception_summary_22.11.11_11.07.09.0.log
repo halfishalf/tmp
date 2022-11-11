@@ -1,0 +1,14 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1  11/11/22, 11:07:09:281 CST  11/11/22, 11:07:09:281 CST java.lang.NullPointerException com.ibm.ws.webcontainer.webapp.WebApp.notifyServletContextCreated 1341
+                                                                            - C:\Users\29863\Desktop\icpctools-main\CDS\wlp\usr\servers\cds\logs\ffdc\ffdc_22.11.11_11.07.09.0.log
+     1      9  11/11/22, 11:07:34:691 CST  11/11/22, 11:09:55:893 CST java.lang.NullPointerException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - C:\Users\29863\Desktop\icpctools-main\CDS\wlp\usr\servers\cds\logs\ffdc\ffdc_22.11.11_11.07.34.0.log
+     2      9  11/11/22, 11:07:35:068 CST  11/11/22, 11:09:55:904 CST java.lang.NullPointerException com.ibm.ws.webcontainer.webapp.WebApp.handleError 912
+                                                                            - C:\Users\29863\Desktop\icpctools-main\CDS\wlp\usr\servers\cds\logs\ffdc\ffdc_22.11.11_11.07.35.0.log
+     3      1  11/11/22, 11:11:46:559 CST  11/11/22, 11:11:46:559 CST java.lang.NullPointerException com.ibm.ws.webcontainer.webapp.WebApp.notifyServletContextDestroyed 1405
+                                                                            - C:\Users\29863\Desktop\icpctools-main\CDS\wlp\usr\servers\cds\logs\ffdc\ffdc_22.11.11_11.11.46.0.log
+     4      1  11/11/22, 11:11:46:683 CST  11/11/22, 11:11:46:683 CST java.lang.reflect.InaccessibleObjectException com.ibm.ws.kernel.service.location.internal.Activator 96
+                                                                            - C:\Users\29863\Desktop\icpctools-main\CDS\wlp\usr\servers\cds\logs\ffdc\ffdc_22.11.11_11.11.46.1.log
+------+------+---------------------------+---------------------------+---------------------------

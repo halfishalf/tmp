@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1  11/11/22, 11:15:39:565 CST  11/11/22, 11:15:39:566 CST java.lang.NullPointerException com.ibm.ws.webcontainer.webapp.WebApp.notifyServletContextCreated 1341
+                                                                            - C:\Users\29863\Desktop\icpctools-main\CDS\wlp\usr\servers\cds\logs\ffdc\ffdc_22.11.11_11.15.39.0.log
+------+------+---------------------------+---------------------------+---------------------------

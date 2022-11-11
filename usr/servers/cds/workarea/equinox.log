@@ -1,0 +1,67 @@
+!SESSION 2022-11-11 11:11:46.662 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+
+!ENTRY com.ibm.ws.org.apache.aries.jndi.core 4 0 2022-11-11 11:11:46.662
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.apache.aries.jndi.startup.Activator.stop() of bundle com.ibm.ws.org.apache.aries.jndi.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:891)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1026)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:203)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:221)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.IllegalStateException: java.lang.reflect.InaccessibleObjectException: Unable to make field private static javax.naming.spi.ObjectFactoryBuilder javax.naming.spi.NamingManager.object_factory_builder accessible: module java.naming does not "opens javax.naming.spi" to unnamed module @7c4f09d6
+	at org.apache.aries.jndi.startup.Activator.swapStaticField(Activator.java:271)
+	at org.apache.aries.jndi.startup.Activator.stop(Activator.java:216)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	... 13 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private static javax.naming.spi.ObjectFactoryBuilder javax.naming.spi.NamingManager.object_factory_builder accessible: module java.naming does not "opens javax.naming.spi" to unnamed module @7c4f09d6
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at org.apache.aries.jndi.startup.Activator.swapStaticField(Activator.java:262)
+	... 18 more
+Root exception:
+java.lang.IllegalStateException: java.lang.reflect.InaccessibleObjectException: Unable to make field private static javax.naming.spi.ObjectFactoryBuilder javax.naming.spi.NamingManager.object_factory_builder accessible: module java.naming does not "opens javax.naming.spi" to unnamed module @7c4f09d6
+	at org.apache.aries.jndi.startup.Activator.swapStaticField(Activator.java:271)
+	at org.apache.aries.jndi.startup.Activator.stop(Activator.java:216)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1026)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:203)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:221)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private static javax.naming.spi.ObjectFactoryBuilder javax.naming.spi.NamingManager.object_factory_builder accessible: module java.naming does not "opens javax.naming.spi" to unnamed module @7c4f09d6
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at org.apache.aries.jndi.startup.Activator.swapStaticField(Activator.java:262)
+	... 18 more
